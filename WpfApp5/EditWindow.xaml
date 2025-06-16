@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp5.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="EditWindow"  Height="800" Width="300">
+    <Grid>
+        <Label Content="Добавление" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Название материала" HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Center" Margin="0,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="182" Height="28"/>
+        <Label Content="Тип" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="TypeComboBOx" HorizontalAlignment="Center" Margin="0,186,0,0"  VerticalAlignment="Top" Width="182" Height="28"/>
+        <Label Content="Цена" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PriceBox" HorizontalAlignment="Center" Margin="0,266,0,0" TextWrapping="Wrap" Text="123" VerticalAlignment="Top" Width="182" Height="28"/>
+        <Label Content="Кол во" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CountBox" HorizontalAlignment="Center" Margin="0,348,0,0" TextWrapping="Wrap" Text="123" VerticalAlignment="Top" Width="182" Height="28"/>
+        <Label Content="Мин кол во" HorizontalAlignment="Center" Margin="0,403,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MinBox" HorizontalAlignment="Center" Margin="0,439,0,0" TextWrapping="Wrap" Text="11" VerticalAlignment="Top" Width="182" Height="28"/>
+        <Label Content="Кол во в упаковке" HorizontalAlignment="Center" Margin="0,492,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CountInPackBox" HorizontalAlignment="Center" Margin="0,528,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="182" Height="28"/>
+        <Label Content="Метрика" HorizontalAlignment="Center" Margin="0,583,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MetricBox" HorizontalAlignment="Center" Margin="0,619,0,0" TextWrapping="Wrap" Text="м3" VerticalAlignment="Top" Width="182" Height="28"/>
+        <Button x:Name="AddBtn" Content="Добавить" HorizontalAlignment="Center" Margin="0,705,0,0" VerticalAlignment="Top" Height="40" Width="142" Click="AddBtn_Click"/>
+
+    </Grid>
+</Window>
